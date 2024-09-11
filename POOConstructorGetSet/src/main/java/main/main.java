@@ -14,7 +14,7 @@ public class main {
     public static void main(String[] args) {
         System.out.println("se creará el objeto jose");
         Persona jose = new Persona();
-        
+         
         jose.presentarse();
         System.out.println("objeto creado");
         

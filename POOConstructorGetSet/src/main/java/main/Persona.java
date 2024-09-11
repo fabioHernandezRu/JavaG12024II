@@ -13,20 +13,34 @@ public class Persona {
 
     final private String nombre;
     private int edad;
-
+    
     public Persona() {
         nombre = "";
     }
 
+    /**
+     * constructor de Persona
+     * @param nombre valor para el atributo nombre
+     * 
+     */
     public Persona(String nombre) {
         this.nombre = nombre;
     }
 
+    /**
+     *
+     * @param edad
+     */
     public Persona(int edad) {
         this.edad = edad;
         nombre = "";
     }
     
+    /**
+     *
+     * @param nombre
+     * @param edad
+     */
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
@@ -39,6 +53,10 @@ public class Persona {
         }
     }
 
+    /**
+     *
+     * @return get nombre
+     */
     public String getNombre() {
         return nombre;
     }
