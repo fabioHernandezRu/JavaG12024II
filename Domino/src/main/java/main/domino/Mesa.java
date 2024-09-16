@@ -41,9 +41,7 @@ public class Mesa {
     }
 
     public int getExtremoIzquierdo() {
-        if (!fichasEnMesa.isEmpty()) {
-            return fichasEnMesa.get(0).getValorIzquierdo();
-        }
+        // Agregar codigo para obtener extremo izquierdo 
         return -1;
     }
 

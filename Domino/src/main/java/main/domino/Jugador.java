@@ -41,10 +41,6 @@ public class Jugador {
     }
 
     public void mostrarMano() {
-        System.out.println("Fichas de " + nombre + ":");
-        for (Ficha ficha : mano) {
-            System.out.print(ficha + " ");
-        }
-        System.out.println();
+        // Agregar codigo para mostrar mano (mostrar las fichas del jugador
     }
 }

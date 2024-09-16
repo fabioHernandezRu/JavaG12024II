@@ -10,6 +10,7 @@ package main.domino;
  * @author Fabio Hernandez
  */
 public class Ficha {
+
     private int valorIzquierdo;
     private int valorDerecho;
 
@@ -27,9 +28,8 @@ public class Ficha {
     }
 
     public void voltear() {
-        int temp = valorIzquierdo;
-        valorIzquierdo = valorDerecho;
-        valorDerecho = temp;
+        // Agregar codigo para girar la ficha
+
     }
 
     @Override
