@@ -26,5 +26,6 @@ public class main {
         juego.agregarJugador(nombreJugador2);
 
         juego.iniciarJuego();
+       
     }
 }
