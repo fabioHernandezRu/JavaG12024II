@@ -12,11 +12,17 @@ package main.mvc;
 public class Controlador {
 
     private Usuario modelo;
-    private VistaUsuario vista;
+    private vistaGUI vista;
 
-    public Controlador(Usuario modelo, VistaUsuario vista) {
+    public Controlador(Usuario modelo, vistaGUI vista) {
         this.modelo = modelo;
         this.vista = vista;
+        initController();
+    }
+
+    private void initController() {
+        // Puede escuchar eventos como clics en botones para actualizar el usuario
+        vista.actualizar.addActionListener(e -> actualizarUsuario());
     }
 
     public void actualizarVista() {
@@ -29,4 +35,5 @@ public class Controlador {
         modelo.setNombre(nuevoNombre);
         modelo.setEmail(nuevoEmail);
     }
+
 }

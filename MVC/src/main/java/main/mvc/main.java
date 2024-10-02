@@ -13,23 +13,23 @@ import java.util.Scanner;
  */
 public class main {
 
+
     public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
         // Crear el Modelo
         Usuario usuario = new Usuario("Alvaro", "alvaro@example.com");
-        Scanner scanner = new Scanner(System.in);
-        // Crear la Vista
-        VistaUsuario vista = new VistaUsuario(scanner);
 
+        // Crear la Vista
+        //VistaUsuario vista = new VistaUsuario(scanner);
+        
+        vistaGUI vistaGui = new vistaGUI();
+ 
         // Crear el Controlador
-        Controlador controlador = new Controlador(usuario, vista);
+        Controlador controlador = new Controlador(usuario, vistaGui);
 
         // Mostrar datos iniciales
-        controlador.actualizarVista();
-
-        // Actualizar datos del usuario
-        controlador.actualizarUsuario();
-
-        // Mostrar datos actualizados
         controlador.actualizarVista();
     }
 }

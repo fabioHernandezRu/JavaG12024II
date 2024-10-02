@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class VistaUsuario {
     
-    private Scanner scanner;
+    private final Scanner scanner;
     
     VistaUsuario(Scanner scanner){
         this.scanner =  scanner;
@@ -22,15 +22,14 @@ public class VistaUsuario {
         System.out.println("Email: " + usuario.getEmail());
     }
 
-    public String solicitarNuevoNombre() {
+    public String solicitarNuevoNombre() {      
         
-        
-        System.out.print("Ingrese nuevo nombre: ");
+        System.out.println("Ingrese nuevo nombre: ");
         return this.scanner.nextLine();
     }
 
     public String solicitarNuevoEmail() { 
-        System.out.print("Ingrese nuevo email: ");
+        System.out.println("Ingrese nuevo email: ");
         return this.scanner.nextLine();
     }
 }
